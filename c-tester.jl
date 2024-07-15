@@ -1,7 +1,6 @@
 using CSV, Plots, LaTeXStrings, Optimization, OptimizationOptimJL, NativeFileDialog
 
 files = pick_multi_file(filterlist="csv;CSV")
-# files = ["/home/Timon/Documents/elektronik/c-tester-jl/messungen/SDS00001.csv"]
 
 function objective(params, inputdata)
     t = inputdata.Second
